@@ -24,10 +24,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create our Resources in Azure. We will need to create a Resource Group and two Virtual Machines. One Virtual Machine will need to operate on Windows Server (DC-1) and the other one on Windows 10 (Client-1).
+- Ensure the Connectivity between Azure Virtual Machines. Remote Desktop into Client-1 and do a ping test on the Private IP address of DC-1. If you're having an issue, then Remote Desktop into DC-1 and enable ICMPv4 on Windows Firewall.
+- Install Active Directory on DC-1. In DC-1 you can open Server Manger and begin downloading by clicking on add roles and features. Once finished we will be able to create Admin and Regular User Accounts. 
+- Client-1 will now need to be joined to the domain we created through installing Active Directory. This will require changing the DNS settings of Client-1 to match the Private IP address of DC-1. Log into DC-1 as the Admin we created and now we can create additional users and log into Client-1 with them to make sure they are working correctly.
 
 <h2>Deployment and Configuration Steps</h2>
 
