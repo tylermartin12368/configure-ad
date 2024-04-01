@@ -48,6 +48,6 @@ With Active Directory fully setup in DC-1, now we can go to Client-1 and join it
 ![20240329_233600](https://github.com/tylermartin12368/configure-ad/assets/161632103/9e9a8daf-32a8-43a8-817b-51ffd08d5921)
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+With Client-1 joined to the domain, the admin can setup up Client-1 to allow everyone who is a user to have access to remote desktop. Log into Client-1 as the Admin and open up System. Select Remote desktop and click on "Select users that can remotely access this PC". From their type domain users and click on Check Names and hit ok. This will allow all domain users to now have access to logging into Client-1. In DC-1 more users can be created that will all be able to have access to Client-1. Make sure to sign in as Admin into DC-1 and open up Windows PowerShell ISE as Administrator. A new folder will need to be created in WIndows PowerShell ISE to place our code that will allow the creation of additional users. 
 </p>
 <br />
