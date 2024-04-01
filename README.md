@@ -41,7 +41,7 @@ On DC-1, Active Directory can be installed by going into Server Manager. The dow
 ![20240329_230736](https://github.com/tylermartin12368/configure-ad/assets/161632103/074f393a-62af-4e23-8fbc-fac14c892ca5)
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+With Active Directory fully setup in DC-1, now we can go to Client-1 and join it to the domain that was created. To make this happen, we will need to go into Azure and change the DNS settings to match the Private IP address of DC-1. In the Azure Portal go to Virtual Machines and pick Client 1, then go into Networking and click on the highlighted section right next to Network Interface. Next you will go to DNS servers and inside that section, a custom DNS can be created which we will setup to match the Private IP address of DC-1. After setting up the custom DNS, then Client-1 will need to be restarted in order to flush the DNS cache. Relog into Client 1 after restart is completed and now Client-1 should be able to join the domain that was created.     
 </p>
 <br />
 
