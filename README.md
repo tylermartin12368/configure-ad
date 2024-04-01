@@ -34,7 +34,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![20240329_223300](https://github.com/tylermartin12368/configure-ad/assets/161632103/6fa92709-5cd2-4889-9537-a53429f33c80)
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On DC-1, Active Directory can be installed by going into Server Manager. The download begins by clicking on the option "Add roles and features" in Server Manager. When going through the before you begin download section, make sure in Server Roles that you pick Active Directory Domain Services. After the installation is complete, then Active Directory Domain Services will need to be turned into a domain controller. This can be done by clicking on the flag symbol on the top right of the Server Manager and clicking on "Promote this server to a domain controller". All that will be left to do is create a domain name and a password and Active Directory will be fully setup.   
 </p>
 <br />
 
